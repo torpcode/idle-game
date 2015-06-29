@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="game.js"></script>
+</head>
+<body>
+
+<!-- Masks -->
+<div id="loading-mask">
+    Game is loading, please wait.
+</div>
+
+<!-- Game content -->
+<div id="content-wrapper">
+    <div id="exp-bar" mk-progress="Game.currentExp/Game.nextLevelExp">
+        <div><!-- filler --></div>
+        <span><span mk-value="Game.currentExp"></span>/<span mk-value="Game.nextLevelExp"></span></span>
+    </div>
+
+    <div id="level-counter">Level <span mk-value="Game.level"></span></div>
+    <div id="gold-counter">Gold: <span mk-value="!Game.gold"></span></div>
+    <div id="mana-counter">Mana: <span mk-value="!Game.currentMana"></span></div>
+
+    <!-- Navigation bar -->
+    <div id="nav-bar">
+    </div>
+
+    <!-- Spell Book -->
+    <div mk-container="Spell Book">
+        <h1>Spell Book</h1>
+        <div id="gold-button">
+            Mine<br>Gold
+        </div>
+        <div>Gold per click: <span mk-value="Game.goldButtonIncome"></span></div>
+
+        <div id="spells-container"></div>
+    </div>
+
+    <!-- Achievements -->
+    <div id="achievement-container" mk-container="Achievements">
+        <h1>Achievements</h1>
+        <div>Unlocked: <span mk-value="AchievementTracker.totalUnlocked"></span>/<span
+                mk-value="AchievementTracker.totalAchievements"></span></div>
+    </div>
+
+    <!-- Statistics -->
+    <div mk-container="Statistics">
+        <h1>Statistics</h1>
+
+        <table id="stats-table">
+            <tr>
+                <td>Level</td>
+                <td mk-value="Game.level"></td>
+            </tr>
+            <tr>
+                <td>Experience</td>
+                <td mk-value="Game.currentExp"></td>
+            </tr>
+            <tr>
+                <td>Gold</td>
+                <td mk-value="Game.gold"></td>
+            </tr>
+            <tr>
+                <td>Current Mana</td>
+                <td mk-value="Game.currentMana"></td>
+            </tr>
+            <tr>
+                <td>Total Mana Spent</td>
+                <td mk-value="Game.totalManaSpent"></td>
+            </tr>
+            <tr>
+                <td>Spells cast</td>
+                <td mk-value="SpellBook.totalSpellsCast"></td>
+            </tr>
+            <tr>
+                <td>Achievements unlocked</td>
+                <td><span mk-value="AchievementTracker.totalUnlocked"></span>/<span
+                        mk-value="AchievementTracker.totalAchievements"></span></td>
+            </tr>
+            <tr>
+                <td>Time played</td>
+                <td mk-value="Game.totalTimePlayed"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Options -->
+    <div mk-container="Options" style="text-align: left; padding: 8px; ">
+        <label>
+            <input type="checkbox" id="options-floating-labels" checked>Floating labels
+        </label><br>
+        <span class='help-tooltip'>Toggle the floating labels effect. Disabling them might help with performance issues, or you might simply find them annoying.</span>
+
+        <hr>
+
+        <label>
+            <input type="checkbox" id="options-auto-save" checked>Auto-save
+        </label><br>
+        <span style='font-size: 10px; color: #cccccc'>Toggle the automatic saving feature.</span>
+
+        <hr>
+
+        <label>Auto save interval: <input type="number" id="option-auto-save-interval" value="7" maxlength="3"
+                                          style="width: 246px"></label>
+        <input type="button" value="Apply" id="option-auto-save-apply"><br>
+        <span style="font-size: 10px; color: #cccccc">In seconds; default = 7</span>
+
+        <hr>
+
+        <input type="button" value="Manual Save" id="save-button"><br>
+        <span style="font-size: 10px; color: #cccccc">Save the game manually by pressing this button. Useful if auto save is disabled (why?), or if you're paranoid.</span>
+
+        <hr>
+
+        <input type="button" value="Hard Reset"><br>
+        <span style="font-size: 10px; color: #cccccc">Erase all progress and start a new game from scratch. (Confirmation required)</span>
+
+    </div>
+</div>
+
+<!-- Tooltip -->
+<div id="tooltip"></div>
+
+<!-- Templates -->
+<script type="text/template">
+    <div>
+        <div class="tooltip-achievement-name">
+            ${name} ${state}
+        </div>
+        <div>
+            ${description}
+        </div>
+        <div class="tooltip-achievement-progress">${progress}</div>
+    </div>
+</script>
+
+</body>
+</html>

@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="89a933f4-5979-4485-ade0-459fc4502132" name="Default" comment="" />
+    <ignored path="IdleGame.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="IdleGame" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!block;n#constructor#0;n#Component#0" expanded="false" />
+                <element signature="e#798#842#0" expanded="false" />
+                <element signature="e#848#888#0" expanded="false" />
+                <element signature="e#953#1046#0" expanded="false" />
+                <element signature="e#1052#1285#0" expanded="false" />
+                <element signature="e#1350#1443#0" expanded="false" />
+                <element signature="e#1449#1595#0" expanded="false" />
+                <element signature="n#!!block;n#getStyleClass#0;n#Component#0" expanded="false" />
+                <element signature="n#!!block;n#addControl#0;n#Component#0" expanded="false" />
+                <element signature="e#1861#1969#0" expanded="false" />
+                <element signature="n#!!block;n#removeControl#0;n#Component#0" expanded="false" />
+                <element signature="e#2212#2335#0" expanded="false" />
+                <element signature="n#!!block;n#updateValueAsText#0;n#Component#0" expanded="false" />
+                <element signature="e#2523#2860#0" expanded="false" />
+                <element signature="e#2537#2586#0" expanded="false" />
+                <element signature="n#!!block;n#getValueAsText#0;n#Component#0" expanded="false" />
+                <element signature="n#!!block;n#val#0;n#Component#0" expanded="false" />
+                <element signature="n#!!block;n#val#1;n#Component#0" expanded="false" />
+                <element signature="e#3200#3391#0" expanded="false" />
+                <element signature="e#3214#3295#0" expanded="false" />
+                <element signature="e#3428#3521#0" expanded="false" />
+                <element signature="e#3734#4886#0" expanded="false" />
+                <element signature="e#3942#4876#0" expanded="false" />
+                <element signature="e#3989#4862#0" expanded="false" />
+                <element signature="e#4102#4432#0" expanded="false" />
+                <element signature="e#4128#4176#0" expanded="false" />
+                <element signature="e#4454#4507#0" expanded="false" />
+                <element signature="e#6327#6535#0" expanded="false" />
+                <element signature="e#6341#6381#0" expanded="false" />
+                <element signature="e#6649#6826#0" expanded="false" />
+                <element signature="e#6663#6707#0" expanded="false" />
+                <element signature="e#6836#6891#0" expanded="false" />
+                <element signature="e#7128#7252#0" expanded="false" />
+                <element signature="e#7174#7242#0" expanded="false" />
+                <element signature="e#7358#7404#0" expanded="false" />
+                <element signature="e#7410#7471#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33527356">
+              <caret line="355" column="0" selection-start-line="355" selection-start-column="0" selection-end-line="369" selection-end-column="0" />
+              <folding>
+                <element signature="e#592#649#0" expanded="false" />
+                <element signature="e#653#754#0" expanded="false" />
+                <element signature="e#759#856#0" expanded="false" />
+                <element signature="e#1096#1434#0" expanded="false" />
+                <element signature="e#1200#1268#0" expanded="false" />
+                <element signature="e#1279#1432#0" expanded="false" />
+                <element signature="e#1448#1873#0" expanded="false" />
+                <element signature="e#1556#1764#0" expanded="false" />
+                <element signature="e#1720#1760#0" expanded="false" />
+                <element signature="e#1781#1871#0" expanded="false" />
+                <element signature="e#1827#1867#0" expanded="false" />
+                <element signature="e#1893#1934#0" expanded="false" />
+                <element signature="e#1953#2132#0" expanded="false" />
+                <element signature="e#2029#2130#0" expanded="false" />
+                <element signature="e#2349#2651#0" expanded="false" />
+                <element signature="e#2613#2649#0" expanded="false" />
+                <element signature="e#2671#2946#0" expanded="false" />
+                <element signature="e#2694#2719#0" expanded="false" />
+                <element signature="e#2726#2944#0" expanded="false" />
+                <element signature="e#2747#2846#0" expanded="false" />
+                <element signature="e#2865#2940#0" expanded="false" />
+                <element signature="e#3064#3087#0" expanded="false" />
+                <element signature="e#3099#3325#0" expanded="false" />
+                <element signature="e#3656#3809#0" expanded="false" />
+                <element signature="e#3836#3875#0" expanded="false" />
+                <element signature="e#3910#3969#0" expanded="false" />
+                <element signature="e#4000#4064#0" expanded="false" />
+                <element signature="e#4098#4119#0" expanded="false" />
+                <element signature="e#4155#4176#0" expanded="false" />
+                <element signature="e#4281#4468#0" expanded="false" />
+                <element signature="e#4484#4541#0" expanded="false" />
+                <element signature="e#4982#5133#0" expanded="false" />
+                <element signature="e#5149#5457#0" expanded="false" />
+                <element signature="e#5690#5730#0" expanded="false" />
+                <element signature="e#6227#6250#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Html5" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/util.ts" />
+        <option value="$PROJECT_DIR$/src/StorageDevice.ts" />
+        <option value="$PROJECT_DIR$/src/utils.ts" />
+        <option value="$PROJECT_DIR$/src/Assert.ts" />
+        <option value="$PROJECT_DIR$/src/Debug.ts" />
+        <option value="$PROJECT_DIR$/src/Mvc.ts" />
+        <option value="$PROJECT_DIR$/src/utils/Debug.ts" />
+        <option value="$PROJECT_DIR$/src/Tooltip.ts" />
+        <option value="$PROJECT_DIR$/src/Achievements.ts" />
+        <option value="$PROJECT_DIR$/src/utils/Tooltip.ts" />
+        <option value="$PROJECT_DIR$/src/Container.ts" />
+        <option value="$PROJECT_DIR$/src/gui/Container.ts" />
+        <option value="$PROJECT_DIR$/src/utils/Ensure.ts" />
+        <option value="$PROJECT_DIR$/src/gui/Display.ts" />
+        <option value="$PROJECT_DIR$/src/HtmlMvc.ts" />
+        <option value="$PROJECT_DIR$/src/gui/HtmlMvc.ts" />
+        <option value="$PROJECT_DIR$/src/gui/Effects.ts" />
+        <option value="$PROJECT_DIR$/src/gui/FloatingLabel.ts" />
+        <option value="$PROJECT_DIR$/src/graphics/Notification.ts" />
+        <option value="$PROJECT_DIR$/src/graphics/ProgressBar.ts" />
+        <option value="$PROJECT_DIR$/src/graphics/Control.ts" />
+        <option value="$PROJECT_DIR$/src/graphics/controls/Control.ts" />
+        <option value="$PROJECT_DIR$/src/graphics/controls/LabelControl.ts" />
+        <option value="$PROJECT_DIR$/game.js" />
+        <option value="$PROJECT_DIR$/src/graphics/few.ts" />
+        <option value="$PROJECT_DIR$/src/graphics/controls/ProgressBarControl.ts" />
+        <option value="$PROJECT_DIR$/src/utils/Format.ts" />
+        <option value="$PROJECT_DIR$/src/graphics/FloatingLabel.ts" />
+        <option value="$PROJECT_DIR$/src/utils/$.ts" />
+        <option value="$PROJECT_DIR$/src/GameStorage.ts" />
+        <option value="$PROJECT_DIR$/src/LoadedData.ts" />
+        <option value="$PROJECT_DIR$/src/LocalSave.ts" />
+        <option value="$PROJECT_DIR$/src/Options.ts" />
+        <option value="$PROJECT_DIR$/src/SaveTarget.ts" />
+        <option value="$PROJECT_DIR$/src/utils/StorageDevice.ts" />
+        <option value="$PROJECT_DIR$/src/utils/LoadedData.ts" />
+        <option value="$PROJECT_DIR$/src/references.ts" />
+        <option value="$PROJECT_DIR$/src/main.ts" />
+        <option value="$PROJECT_DIR$/src/graphics/Colors.ts" />
+        <option value="$PROJECT_DIR$/src/graphics/HtmlMvc.ts" />
+        <option value="$PROJECT_DIR$/src/graphics/DisplayTab.ts" />
+        <option value="$PROJECT_DIR$/src/graphics/Display.ts" />
+        <option value="$PROJECT_DIR$/src/graphics/DisplayContainer.ts" />
+        <option value="$PROJECT_DIR$/src/Config.ts" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/SpellBook.ts" />
+        <option value="$PROJECT_DIR$/css/style.scss" />
+        <option value="$PROJECT_DIR$/src/AchievementTracker.ts" />
+        <option value="$PROJECT_DIR$/src/Game.ts" />
+        <option value="$PROJECT_DIR$/src/utils/Assert.ts" />
+        <option value="$PROJECT_DIR$/src/Component.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Meteor</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>JSUnfilteredForInLoop</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IdleGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IdleGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IdleGame_old" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IdleGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IdleGame_old" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IdleGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IdleGame_old" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
+    <property name="recentsLimit" value="5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Programming\TS\IdleGame\res" />
+      <recent name="C:\Programming\TS\IdleGame\res\achievements" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Programming\TS\IdleGame\src\utils" />
+      <recent name="C:\Programming\TS\IdleGame\res" />
+      <recent name="C:\Programming\TS\IdleGame\src\graphics\controls" />
+      <recent name="C:\Programming\TS\IdleGame\res\achievements" />
+      <recent name="C:\Programming\TS\IdleGame\src\gui" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IdleGame/index.html">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="89a933f4-5979-4485-ade0-459fc4502132" name="Default" comment="" />
+      <created>1430186128452</created>
+      <option name="number" value="Default" />
+      <updated>1430186128452</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.101685986" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14925373" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18705036" sideWeight="0.5021075" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959852" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32223222" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32583258" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39962652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/SpellBook.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="66" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AchievementTracker.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AchievementTracker.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Assert.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Format.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/references.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/HtmlMvc.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/HtmlMvc.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/HtmlMvc.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/achievements/coin_stack_blue.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="12" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Ensure.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/ProgressBar.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/Notification.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/controls/LabelControl.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/controls/ProgressBarControl.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/unknown.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/typescriptCompiler/external/lib.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="13900" column="12" selection-start-line="13900" selection-start-column="12" selection-end-line="13900" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/$.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/SaveTarget.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Options.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="14" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../JS/Tpr/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/LoadedData.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/references.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/HtmlMvc.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="69" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.868648">
+          <caret line="995" column="22" selection-start-line="995" selection-start-column="22" selection-end-line="995" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.090191655">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SpellBook.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AchievementTracker.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/_reset.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Tooltip.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Format.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/DisplayContainer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/controls/Control.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/Colors.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Assert.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/FloatingLabel.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/Display.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/DisplayNode.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#constructor#0;n#Component#0" expanded="false" />
+            <element signature="e#798#842#0" expanded="false" />
+            <element signature="e#848#888#0" expanded="false" />
+            <element signature="e#953#1046#0" expanded="false" />
+            <element signature="e#1052#1285#0" expanded="false" />
+            <element signature="e#1350#1443#0" expanded="false" />
+            <element signature="e#1449#1595#0" expanded="false" />
+            <element signature="n#!!block;n#getStyleClass#0;n#Component#0" expanded="false" />
+            <element signature="n#!!block;n#addControl#0;n#Component#0" expanded="false" />
+            <element signature="e#1861#1969#0" expanded="false" />
+            <element signature="n#!!block;n#removeControl#0;n#Component#0" expanded="false" />
+            <element signature="e#2212#2335#0" expanded="false" />
+            <element signature="n#!!block;n#updateValueAsText#0;n#Component#0" expanded="false" />
+            <element signature="e#2523#2860#0" expanded="false" />
+            <element signature="e#2537#2586#0" expanded="false" />
+            <element signature="n#!!block;n#getValueAsText#0;n#Component#0" expanded="false" />
+            <element signature="n#!!block;n#val#0;n#Component#0" expanded="false" />
+            <element signature="n#!!block;n#val#1;n#Component#0" expanded="false" />
+            <element signature="e#3200#3391#0" expanded="false" />
+            <element signature="e#3214#3295#0" expanded="false" />
+            <element signature="e#3428#3521#0" expanded="false" />
+            <element signature="e#3734#4886#0" expanded="false" />
+            <element signature="e#3942#4876#0" expanded="false" />
+            <element signature="e#3989#4862#0" expanded="false" />
+            <element signature="e#4102#4432#0" expanded="false" />
+            <element signature="e#4128#4176#0" expanded="false" />
+            <element signature="e#4454#4507#0" expanded="false" />
+            <element signature="e#6327#6535#0" expanded="false" />
+            <element signature="e#6341#6381#0" expanded="false" />
+            <element signature="e#6649#6826#0" expanded="false" />
+            <element signature="e#6663#6707#0" expanded="false" />
+            <element signature="e#6836#6891#0" expanded="false" />
+            <element signature="e#7128#7252#0" expanded="false" />
+            <element signature="e#7174#7242#0" expanded="false" />
+            <element signature="e#7358#7404#0" expanded="false" />
+            <element signature="e#7410#7471#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33527356">
+          <caret line="355" column="0" selection-start-line="355" selection-start-column="0" selection-end-line="369" selection-end-column="0" />
+          <folding>
+            <element signature="e#592#649#0" expanded="false" />
+            <element signature="e#653#754#0" expanded="false" />
+            <element signature="e#759#856#0" expanded="false" />
+            <element signature="e#1096#1434#0" expanded="false" />
+            <element signature="e#1200#1268#0" expanded="false" />
+            <element signature="e#1279#1432#0" expanded="false" />
+            <element signature="e#1448#1873#0" expanded="false" />
+            <element signature="e#1556#1764#0" expanded="false" />
+            <element signature="e#1720#1760#0" expanded="false" />
+            <element signature="e#1781#1871#0" expanded="false" />
+            <element signature="e#1827#1867#0" expanded="false" />
+            <element signature="e#1893#1934#0" expanded="false" />
+            <element signature="e#1953#2132#0" expanded="false" />
+            <element signature="e#2029#2130#0" expanded="false" />
+            <element signature="e#2349#2651#0" expanded="false" />
+            <element signature="e#2613#2649#0" expanded="false" />
+            <element signature="e#2671#2946#0" expanded="false" />
+            <element signature="e#2694#2719#0" expanded="false" />
+            <element signature="e#2726#2944#0" expanded="false" />
+            <element signature="e#2747#2846#0" expanded="false" />
+            <element signature="e#2865#2940#0" expanded="false" />
+            <element signature="e#3064#3087#0" expanded="false" />
+            <element signature="e#3099#3325#0" expanded="false" />
+            <element signature="e#3656#3809#0" expanded="false" />
+            <element signature="e#3836#3875#0" expanded="false" />
+            <element signature="e#3910#3969#0" expanded="false" />
+            <element signature="e#4000#4064#0" expanded="false" />
+            <element signature="e#4098#4119#0" expanded="false" />
+            <element signature="e#4155#4176#0" expanded="false" />
+            <element signature="e#4281#4468#0" expanded="false" />
+            <element signature="e#4484#4541#0" expanded="false" />
+            <element signature="e#4982#5133#0" expanded="false" />
+            <element signature="e#5149#5457#0" expanded="false" />
+            <element signature="e#5690#5730#0" expanded="false" />
+            <element signature="e#6227#6250#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

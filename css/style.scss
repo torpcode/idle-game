@@ -1,0 +1,369 @@
+@import "reset";
+
+$gold-color: #ffcc11;
+$mana-color: #81a6ff;
+
+// General styles
+// ============================================================================
+
+body {
+  background-color: #6b6b6b;
+
+  // Default font
+  font-family: verdana, arial, sans-serif;
+  font-size: 13px;
+  color: #f8f8f8;
+
+  // Prevent annoying text selection
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  // Also remove the text-selection cursor, as it's unselectable anyway
+  cursor: default;
+}
+
+h1 {
+  margin: 5px 0;
+  font-size: 24px;
+  color: #11ee11;
+}
+
+b {
+  // Bring back the boldness of the <b> element, since the reset removes it.
+  font-weight: bold;
+}
+
+hr {
+  margin: 8px 0;
+  width: 300px;
+
+  border: none;
+  height: 1px;
+  background-color: #777777;
+}
+
+// Layout
+// ============================================================================
+
+div#content-wrapper {
+  margin: 0 auto;
+  padding-bottom: 12px;
+  width: 800px;
+
+  background-color: #5c5c5c;
+  text-align: center;
+}
+
+div#exp-bar {
+  $ht: 12px;
+  width: 100%;
+  height: $ht;
+  position: relative;
+
+  background-color: #444444;
+
+  div {
+    width: 0;
+    height: 100%;
+    background-color: #9900CC;
+  }
+
+  > span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: $ht;
+
+    font-size: 11px;
+  }
+}
+
+div#nav-bar {
+  text-align: left;
+  $border: 1px solid #333333;
+  border-top: $border;
+  border-bottom: $border;
+
+  div {
+    display: inline-block;
+    padding: 4px 6px;
+
+    border-right: 1px solid #3a3a3a;
+    font-size: 12px;
+    color: #cccccc;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #228822;
+    }
+  }
+
+  .current-nav {
+    background-color: #305070;
+
+    &:hover {
+      background-color: #4a6a8a;
+    }
+  }
+}
+
+div#level-counter {
+  margin-top: 4px;
+  font-size: 20px;
+}
+
+div#gold-counter {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: $gold-color;
+
+  &:after {
+    content: url('../res/coin_stack.png');
+    position: relative;
+    top: 3px;
+    left: 2px;
+  }
+}
+
+div#mana-counter {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: $mana-color;
+
+  &:after {
+    content: url('../res/mana_bubble.png');
+    position: relative;
+    top: 1px;
+    left: 2px;
+  }
+}
+
+div#gold-button {
+  margin: 10px auto;
+  width: 160px;
+  $ht: 160px;
+  height: $ht*(3/4);
+  padding-top: $ht/4;
+  line-height: $ht/4;
+
+  border-radius: 100%;
+  background-color: #444444;
+  font-size: 24px;
+  text-align: center;
+  color: $gold-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #222222;
+  }
+}
+
+table#stats-table {
+  width: 100%;
+
+  td {
+    padding: 1px 0;
+  }
+
+  tr {
+    td:first-child {
+      padding-right: 4px;
+      width: 50%;
+
+      color: #bbbbbb;
+      text-align: right;
+    }
+    td:last-child {
+      padding-left: 4px;
+      width: 50%;
+
+      text-align: left;
+    }
+  }
+}
+
+// Spell Book
+// ============================================================================
+
+div#spells-container {
+  margin-top: 12px;
+}
+
+div.spell {
+  display: inline-block;
+  margin: 4px;
+  width: 80px;
+  height: 80px;
+  //line-height: 60px;
+  //white-space: nowrap;
+
+  border: 1px solid #333333;
+  background-color: #334455;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.tooltip-spell-title {
+  margin-bottom: 6px;
+  color: #aa33cc;
+  font-size: 20px;
+}
+
+.tooltip-spell-description {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #aaaaaa;
+  font-style: normal;
+}
+
+// Achievements
+// ============================================================================
+
+div.achievement {
+  display: inline-block;
+  margin: 2px;
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid #aa2222;
+  background: #111111 url('../res/unknown.png');
+}
+
+div.achievement-unlocked {
+  border-color: #22aa22 !important;
+}
+
+div.tooltip-achievement-progress {
+  margin-top: 7px;
+  font-size: 11px;
+  color: #aaaaaa;
+}
+
+div.tooltip-achievement-name {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #ff7700;
+}
+
+span.tooltip-achievement-locked {
+  color: #ee2222;
+}
+
+span.tooltip-achievement-unlocked {
+  color: #22bb22;
+}
+
+// Masks
+// ============================================================================
+
+.screen-mask {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 18px;
+
+  line-height: 30px;
+  text-align: center;
+  font-size: 24px;
+  color: #f0f0f0;
+}
+
+#loading-mask {
+  @extend .screen-mask;
+
+  background-color: #335577;
+}
+
+// Misc
+// ============================================================================
+
+.gold-value {
+  color: $gold-color;
+
+  &:after {
+    content: url('../res/gold_coin.png');
+    position: relative;
+    left: 2px;
+    top: 2px;
+  }
+}
+
+.mana-value {
+  color: $mana-color;
+
+  &:after {
+    content: url('../res/mana_bubble.png');
+    vertical-align: baseline;
+    position: relative;
+    left: 2px;
+    top: 2px;
+  }
+}
+
+.floating-label {
+  position: fixed;
+  font-size: 16px;
+  color: #ffffff;
+
+  // To prevent the label from interfering with other mouse events
+  pointer-events: none;
+}
+
+.notification {
+  position: fixed;
+  width: 100%;
+  $ht: 40px;
+  height: $ht;
+  line-height: $ht;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.35);
+  text-align: center;
+  font-size: 20px;
+  color: #f0f0f0;
+
+  // To prevent the notification from interfering with other mouse events
+  pointer-events: none;
+}
+
+div#tooltip {
+  display: none; // Hidden by default until needed
+  max-width: 400px;
+  position: absolute;
+  padding: 8px;
+
+  border: 1px solid #000000;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.help-tooltip {
+  font-size: 10px;
+  color: #cccccc;
+}
+
+*[mk-value]:empty {
+  // This makes 'mk-value' directives that are empty (uninitialized)
+  // show a '?' as their content. Hopefully the user never sees this,
+  // as these elements should be updated to the proper value before
+  // they are ever shown to the user.
+  // If somehow the user does see this, it's better than having an
+  // empty element since it's not even clear something is there.
+  // This would make it more obvious that there is some sort of bug
+  // in the game.
+
+  &:before {
+    content: '?';
+  }
+}
