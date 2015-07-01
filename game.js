@@ -273,72 +273,83 @@ var Ensure;
     }
     Ensure.isString = isString;
 })(Ensure || (Ensure = {}));
-var LoadedData = (function () {
-    function LoadedData(dataObj) {
-        this.dataObj = dataObj;
+/**
+ * Helps with loading and saving data to the player's machine.
+ */
+var StorageDevice = (function () {
+    /**
+     * Creates a new StorageDevice object.
+     * @param saveKey A key with which data will be loaded and saved.
+     */
+    function StorageDevice(saveKey) {
+        /**
+         * List of bindings used to save data.
+         */
+        this.bindings = [];
+        this.saveKey = saveKey;
+        // Try to load previous session immediately
+        this.tryLoad();
     }
-    LoadedData.prototype.readCmp = function (key, cmp) {
-        var dataObj = this.dataObj;
-        if (dataObj.hasOwnProperty(key)) {
-            var data = dataObj[key];
-            // todo: typeof data === "number"?
-            if (data !== undefined && data !== null) {
-                cmp.val = data;
-            }
-        }
+    /**
+     * Binds a component to the storage device.
+     * The value of the component will be updated immediately, if loaded data is present for the specified key.
+     * The value of the component will also be saved with the specified key whenever the 'save()' method of the
+     * StorageDevice is called.
+     */
+    StorageDevice.prototype.bindCmp = function (key, cmp) {
+        this.bind(key, (function (x) { return cmp.val = x; }), (function () { return cmp.val; }));
     };
-    LoadedData.prototype.read = function (key, ref) {
-        var dataObj = this.dataObj;
-        if (dataObj.hasOwnProperty(key)) {
-            var data = dataObj[key];
-            if (data !== undefined && data !== null) {
-                ref(data);
-            }
+    /**
+     * Binds to the storage device.
+     *
+     * The 'onLoad' function will be invoked immediately, if the loaded data has a value for the specified key.
+     * The resolved value will be passed as the function's parameter.
+     *
+     * The 'onSave' function will be invoked whenever the 'save()' method of the StorageDevice is called.
+     * The return value of the function will be saved.
+     */
+    StorageDevice.prototype.bind = function (key, onLoad, onSave) {
+        // Load data immediately, if there is any
+        var loadedData = this.loadedData;
+        if (loadedData && loadedData.hasOwnProperty(key)) {
+            onLoad(loadedData[key]);
         }
+        this.bindings.push({ key: key, onSave: onSave });
     };
-    LoadedData.load = function (key) {
-        var data = localStorage.getItem(key);
-        if (!data) {
-            // No saved data found
-            return null;
+    /**
+     * Attempts to load data from the previous session.
+     */
+    StorageDevice.prototype.tryLoad = function () {
+        var rawString = localStorage.getItem(this.saveKey);
+        if (!rawString) {
+            // No data matching the key found
+            return;
         }
+        var data;
         try {
-            data = JSON.parse(data);
+            data = JSON.parse(rawString);
         }
         catch (ex) {
-            // Bad or corrupt data
-            Assert.fail("Bad save data.");
-            return null;
-        }
-        return new LoadedData(data);
-    };
-    return LoadedData;
-})();
-var SaveTarget = (function () {
-    function SaveTarget() {
-        this.dataObj = {};
-        this.saved = false;
-    }
-    SaveTarget.prototype.write = function (key, data) {
-        if (this.saved) {
-            Assert.fail("The specified SaveTarget object has already been saved.");
+            // Data is not valid JSON (corrupt?)
             return;
         }
-        var dataObj = this.dataObj;
-        if (dataObj.hasOwnProperty(key)) {
-            throw new Error("Target object already has data for the following key.");
-        }
-        dataObj[key] = data;
+        // Data loaded successfully
+        this.loadedData = data;
     };
-    SaveTarget.prototype.save = function (key) {
-        if (this.saved) {
-            Assert.fail("The specified SaveTarget object has already been saved.");
-            return;
+    /**
+     * Saves the current bindings of the StorageDevice to the player's machine.
+     */
+    StorageDevice.prototype.save = function () {
+        var data = {};
+        // Populate data object with bindings
+        var bindings = this.bindings;
+        for (var i = 0; i < bindings.length; i++) {
+            var b = bindings[i];
+            data[b.key] = b.onSave();
         }
-        this.saved = true;
-        localStorage.setItem(key, JSON.stringify(this.dataObj));
+        localStorage.setItem(this.saveKey, JSON.stringify(data));
     };
-    return SaveTarget;
+    return StorageDevice;
 })();
 /**
  * Handles the visual state and rendering of the game.
@@ -1165,8 +1176,8 @@ var AchievementTracker;
 var SpellBook;
 (function (SpellBook) {
     SpellBook.totalSpellsCast = new Component();
-    function init(loadedData) {
-        loadedData.readCmp("tc", SpellBook.totalSpellsCast);
+    function init(storage) {
+        storage.bindCmp("tc", SpellBook.totalSpellsCast);
         new Spell("Transmute", 5, "transmute.jpg", {
             gives: "Gives <span class='gold-value'>+1</span>",
             description: "A skill long sought after by many, alchemy is an ancient form of " +
@@ -1178,10 +1189,6 @@ var SpellBook;
         }, function () { return Game.currentExp.val += 12; });
     }
     SpellBook.init = init;
-    function save(saveTarget) {
-        saveTarget.write("tc", SpellBook.totalSpellsCast.val);
-    }
-    SpellBook.save = save;
     var Spell = (function () {
         function Spell(name, manaCost, icon, tooltip, spellEffect) {
             var element = document.createElement("div");
@@ -1334,16 +1341,14 @@ var Game;
     Game.gameStartTime = new Component();
     // elements
     var goldButton;
-    function init(loadedData) {
-        if (loadedData) {
-            loadedData.readCmp("lv", Game.level);
-            loadedData.readCmp("ce", Game.currentExp);
-            loadedData.readCmp("gd", Game.gold);
-            loadedData.readCmp("tp", Game.totalTimePlayed);
-            loadedData.readCmp("st", Game.gameStartTime);
-            loadedData.readCmp("mn", Game.currentMana);
-            loadedData.readCmp("ms", Game.totalManaSpent);
-        }
+    function init(storage) {
+        storage.bindCmp("lv", Game.level);
+        storage.bindCmp("ce", Game.currentExp);
+        storage.bindCmp("gd", Game.gold);
+        storage.bindCmp("tp", Game.totalTimePlayed);
+        storage.bindCmp("st", Game.gameStartTime);
+        storage.bindCmp("mn", Game.currentMana);
+        storage.bindCmp("ms", Game.totalManaSpent);
         goldButton = $.id("gold-button");
         goldButton.addEventListener("mousedown", clickOnGoldButton);
     }
@@ -1373,16 +1378,6 @@ var Game;
         Game.totalTimePlayed.val += elapsedMS;
     }
     Game.update = update;
-    function save(saveTarget) {
-        saveTarget.write("lv", Game.level.val);
-        saveTarget.write("ce", Game.currentExp.val);
-        saveTarget.write("gd", Game.gold.val);
-        saveTarget.write("tp", Game.totalTimePlayed.val);
-        saveTarget.write("st", Game.gameStartTime.val);
-        saveTarget.write("mn", Game.currentMana.val);
-        saveTarget.write("ms", Game.totalManaSpent.val);
-    }
-    Game.save = save;
 })(Game || (Game = {}));
 (function () {
     window.addEventListener("load", main);
@@ -1391,7 +1386,7 @@ var Game;
      */
     function main() {
         // Try to load data from a previous session.
-        var loadedData = LoadedData.load(Config.SAVE_KEY);
+        var loadedData = new StorageDevice(Config.SAVE_KEY);
         // Initialize game related stuff
         Game.init(loadedData);
         SpellBook.init(loadedData);
@@ -1405,13 +1400,6 @@ var Game;
         // Show default container
         Display.switchContainer("Spell Book");
         var autoSaveTimer = 0;
-        function saveGame() {
-            autoSaveTimer = 0;
-            var saveTarget = new SaveTarget();
-            Game.save(saveTarget);
-            SpellBook.save(saveTarget);
-            saveTarget.save(Config.SAVE_KEY);
-        }
         var firstTick = true;
         var lastTick = Date.now();
         // Handles the timing mechanism of the game.
@@ -1426,7 +1414,8 @@ var Game;
                 // Auto save feature
                 autoSaveTimer += elapsedMS;
                 if (autoSaveTimer >= Options.autoSaveInterval) {
-                    saveGame();
+                    autoSaveTimer = 0;
+                    loadedData.save();
                     console.log("Game auto saved.");
                 }
             }
@@ -1444,8 +1433,9 @@ var Game;
                 loadingMask.parentNode.removeChild(loadingMask);
                 // Enable the save button
                 $.id("save-button").addEventListener("click", function () {
+                    autoSaveTimer = 0;
+                    loadedData.save();
                     console.log("Game saved manually.");
-                    saveGame();
                 });
             }
         }
@@ -1459,8 +1449,7 @@ var Game;
 /// <reference path="utils/Tooltip.ts" />
 /// <reference path="utils/$.ts" />
 /// <reference path="utils/Ensure.ts" />
-/// <reference path="utils/LoadedData.ts" />
-/// <reference path="utils/SaveTarget.ts" />
+/// <reference path="utils/StorageDevice.ts" />
 /// <reference path="graphics/Display.ts" />
 /// <reference path="graphics/DisplayContainer.ts" />
 /// <reference path="graphics/DisplayNode.ts" />

@@ -5,7 +5,7 @@
      */
     function main(): void {
         // Try to load data from a previous session.
-        const loadedData = LoadedData.load(Config.SAVE_KEY);
+        const loadedData = new StorageDevice(Config.SAVE_KEY);
 
         // Initialize game related stuff
         Game.init(loadedData);
@@ -23,15 +23,6 @@
         Display.switchContainer("Spell Book");
 
         let autoSaveTimer = 0;
-
-        function saveGame(): void {
-            autoSaveTimer = 0;
-            const saveTarget = new SaveTarget();
-            Game.save(saveTarget);
-            SpellBook.save(saveTarget);
-            saveTarget.save(Config.SAVE_KEY);
-        }
-
         let firstTick = true;
         let lastTick = Date.now();
         // Handles the timing mechanism of the game.
@@ -48,7 +39,8 @@
                 // Auto save feature
                 autoSaveTimer += elapsedMS;
                 if (autoSaveTimer >= Options.autoSaveInterval) {
-                    saveGame();
+                    autoSaveTimer = 0;
+                    loadedData.save();
                     console.log("Game auto saved.");
                 }
             }
@@ -70,8 +62,9 @@
 
                 // Enable the save button
                 $.id("save-button").addEventListener("click", () => {
+                    autoSaveTimer = 0;
+                    loadedData.save();
                     console.log("Game saved manually.")
-                    saveGame();
                 });
             }
         }

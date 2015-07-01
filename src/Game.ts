@@ -28,16 +28,14 @@ module Game {
     // elements
     let goldButton: HTMLElement;
 
-    export function init(loadedData: LoadedData): void {
-        if (loadedData) {
-            loadedData.readCmp("lv", level);
-            loadedData.readCmp("ce", currentExp);
-            loadedData.readCmp("gd", gold);
-            loadedData.readCmp("tp", totalTimePlayed);
-            loadedData.readCmp("st", gameStartTime);
-            loadedData.readCmp("mn", currentMana);
-            loadedData.readCmp("ms", totalManaSpent);
-        }
+    export function init(storage: StorageDevice): void {
+        storage.bindCmp("lv", level);
+        storage.bindCmp("ce", currentExp);
+        storage.bindCmp("gd", gold);
+        storage.bindCmp("tp", totalTimePlayed);
+        storage.bindCmp("st", gameStartTime);
+        storage.bindCmp("mn", currentMana);
+        storage.bindCmp("ms", totalManaSpent);
 
         goldButton = $.id("gold-button");
         goldButton.addEventListener("mousedown", clickOnGoldButton);
@@ -70,17 +68,6 @@ module Game {
     export function update(elapsedMS: number): void {
         currentMana.val += manaIncome.val*(elapsedMS/1000);
         totalTimePlayed.val += elapsedMS;
-    }
-
-    export function save(saveTarget: SaveTarget): void {
-        saveTarget.write("lv", level.val);
-        saveTarget.write("ce", currentExp.val);
-        saveTarget.write("gd", gold.val);
-        saveTarget.write("tp", totalTimePlayed.val);
-        saveTarget.write("st", gameStartTime.val);
-        saveTarget.write("mn", currentMana.val);
-        saveTarget.write("ms", totalManaSpent.val);
-
     }
 }
 

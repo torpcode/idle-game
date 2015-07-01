@@ -1,8 +1,8 @@
 module SpellBook {
     export const totalSpellsCast = new Component();
 
-    export function init(loadedData: LoadedData): void {
-        loadedData.readCmp("tc", totalSpellsCast);
+    export function init(storage: StorageDevice): void {
+        storage.bindCmp("tc", totalSpellsCast);
 
         new Spell("Transmute", 5, "transmute.jpg", {
             gives: "Gives <span class='gold-value'>+1</span>",
@@ -13,10 +13,6 @@ module SpellBook {
             gives: "Gives <span style='color: #9922ff'>+12 Experience</span>",
             description: "Summons experience (?)"
         }, () => Game.currentExp.val += 12);
-    }
-
-    export function save(saveTarget: SaveTarget): void {
-        saveTarget.write("tc", totalSpellsCast.val);
     }
 
     class Spell {
@@ -38,7 +34,7 @@ module SpellBook {
 
             const tooltipText = `<div class='tooltip-spell-title'>${name} <span class='mana-value'>${manaCost}</span></div>` +
                 `<div>${tooltip.gives}</div>` +
-                `<div class='tooltip-spell-description'>${tooltip.description}</div>`
+                `<div class='tooltip-spell-description'>${tooltip.description}</div>`;
 
             Tooltip.attachText(element, tooltipText);
             $.id("spells-container").appendChild(element);

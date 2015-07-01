@@ -4,8 +4,7 @@
 /// <reference path="utils/Tooltip.ts" />
 /// <reference path="utils/$.ts" />
 /// <reference path="utils/Ensure.ts" />
-/// <reference path="utils/LoadedData.ts" />
-/// <reference path="utils/SaveTarget.ts" />
+/// <reference path="utils/StorageDevice.ts" />
 
 /// <reference path="graphics/Display.ts" />
 /// <reference path="graphics/DisplayContainer.ts" />
